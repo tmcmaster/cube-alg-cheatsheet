@@ -1,0 +1,125 @@
+{
+  "algs" : [
+    {
+      "title" : "Case 1",
+      "image" : "images/algs-5x5x5-edges-01.png",
+      "alg" : [
+        "Rw'",
+        "U' R' U R'",
+        "F R F'",
+        "Rw"
+      ]
+    },
+    {
+      "title" : "Case 2",
+      "image" : "images/algs-5x5x5-edges-02.png",
+      "alg" : [
+        "Lw",
+        "U' R' U R'",
+        "F R F'",
+        "Lw'"
+      ]
+    },
+    {
+      "title" : "Case 3",
+      "image" : "images/algs-5x5x5-edges-03.png",
+      "alg" : [
+        "x' M' U'",
+        "R' U R'",
+        "F R F'",
+        "M"
+      ]
+    },
+    {
+      "title" : "Case 4",
+      "image" : "images/algs-5x5x5-edges-04.png",
+      "alg" : [
+        "Rw2 F2",
+        "U2 r2 U2",
+        "F2 Rw2"
+      ]
+    },
+    {
+      "title" : "Case 5",
+      "image" : "images/algs-5x5x5-edges-05.png",
+      "alg" : [
+        "Rw U2 Rw U2",
+        "Rw' U2 Rw U2",
+        "Lw' U2 Rw U2",
+        "Rw' U2 x'",
+        "Rw' U2 Rw' U2",
+        "M'"
+      ]
+    },
+    {
+      "title" : "Case 6",
+      "image" : "images/algs-5x5x5-edges-06.png",
+      "alg" : [
+        "Rw U2 Rw U2",
+        "Rw' U2 Rw U2",
+        "Lw' U2 Lw F2",
+        "Rw' F2 Rw' U2 Rw'"
+      ]
+    },
+    {
+      "title" : "Case 7",
+      "image" : "images/algs-5x5x5-edges-07.png",
+      "alg" : [
+        "Rw U2 Rw U2",
+        "Rw' U2 Rw U2",
+        "Lw' U2 Lw F2",
+        "Rw' F2 Rw' U2 Rw'"
+      ]
+    },
+    {
+      "title" : "Case 8",
+      "image" : "images/algs-5x5x5-edges-08.png",
+      "alg" : [
+        "Lw2 F2",
+        "U2 Lw' U2 Lw2",
+        "F2 Lw' U2 Lw2",
+        "U2 F2 Lw'"
+      ]
+    },
+    {
+      "title" : "Case 9",
+      "image" : "images/algs-5x5x5-edges-09.png",
+      "alg" : [
+        "Rw2 F2",
+        "U2 Lw' U2 Lw2",
+        "F2 Lw' U2 Rw2",
+        "U2 F2 Rw"
+      ]
+    },
+    {
+      "title" : "Case 10",
+      "image" : "images/algs-5x5x5-edges-10.png",
+      "alg" : [
+        "Rw' U2 Rw2 U2",
+        "Rw U2 Rw' U2",
+        "Rw U2 Rw2",
+        "U2 Rw'"
+      ]
+    },
+    {
+      "title" : "Case 11",
+      "image" : "images/algs-5x5x5-edges-11.png",
+      "alg" : [
+        "Rw U2 Rw2 U2",
+        "Rw' U2 Rw U2",
+        "Rw' U2 Rw2",
+        "U2 Rw"
+      ]
+    },
+    {
+      "title" : "Case 12",
+      "image" : "images/algs-5x5x5-edges-12.png",
+      "alg" : [
+        "Rw' U2 Rw' U2",
+        "B2 Rw' B2 Rw'",
+        "F2 Lw2 F2 Rw",
+        "U2 Rw2"
+      ]
+    }
+  ]
+}

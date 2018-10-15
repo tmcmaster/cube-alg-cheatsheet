@@ -1,0 +1,104 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-card/paper-card.html">
+
+<dom-module id="cube-alg">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+        width:200px;
+        height:290px;
+        border:solid lightgrey 1px;
+        //padding: 10px;
+        position: relative;
+        float: left;
+        margin: 5px;
+      }
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+      ul {
+        display: block;
+        list-style-type: none;
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-top: 10px;
+      }
+      img {
+        display: table;
+        margin: 0 auto;
+        width:100px;
+        height:100px;
+      }
+      div {
+        display: table;
+        margin: 0 auto;
+      }
+      li.alg-sm {
+        color: red;
+      }
+    </style>
+    <div>
+      <h2>{{title}}</h2>
+      <img src="../{{image}}"/>
+      <ul style$="">
+        <template is="dom-repeat" items="{{alg}}">
+          <li style$="color:{{getColor(item)}}">{{item}}</li>
+        </template>
+      </ul>
+    </div>
+  </template>
+
+  <script>
+    const algColors = {
+      "R U R' U'": "red",
+      "( R U R' U' ) x2": "red",
+      "( R U R' U' ) x3": "red",
+      "R U R' F'": "blue",
+      "R' F R F'": "green",
+      "R' F R2 U' R'": "orange",
+      "R2 U' R' U R' F R": "magenta"
+    }
+    /**
+     * `cube-alg`
+     *
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class CubeAlg extends Polymer.Element {
+      static get is() { return 'cube-alg'; }
+      static get properties() {
+        return {
+          title: {
+            type: String,
+            value: 'Headlights'
+          },
+          image: {
+            type: String,
+            value: 'images/oll-corners-01-headlights.png'
+          },
+          alg: {
+            type: Array,
+            notify: true,
+            value: ["F","R U R' U'", "F'"]
+          }
+        };
+      }
+      getColor(item) {
+        var color = algColors[item];
+        color = (color === undefined ? "black" : color);
+        console.log("-- " + item + " : " + color);
+        return color;
+      }
+    }
+
+    window.customElements.define(CubeAlg.is, CubeAlg);
+  </script>
+</dom-module>

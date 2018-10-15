@@ -1,0 +1,19 @@
+{
+  "algs": [
+    {
+      "title": "Opposite",
+      "image": "images/oll-edges-01-opposite.png",
+      "alg": ["M U M U M U2", "M' U M' U M' U2"]
+    },
+    {
+      "title": "Diagonal",
+      "image": "images/oll-edges-02-diagonal.png",
+      "alg": ["M U", "M' U2", "M U M'"]
+    },
+    {
+      "title": "Cross",
+      "image": "images/oll-edges-03-cross.png",
+      "alg": ["M U2 M' U2", "M U", "M' U2 M U2", "M' U'"]
+    }
+  ]
+}

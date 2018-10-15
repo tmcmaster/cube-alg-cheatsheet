@@ -1,0 +1,44 @@
+{
+  "algs": [
+    {
+      "title": "U - Left",
+      "image": "images/pll-edges-01-U-left.png",
+      "alg": [
+        "L' U",
+        "L' U' L' U'",
+        "L' U L U",
+        "L2"
+      ]
+    },
+    {
+      "title": "U - Right",
+      "image": "images/pll-edges-02-U-right.png",
+      "alg": [
+        "R U'",
+        "R U R U",
+        "R U' R' U'",
+        "R2"
+      ]
+    },
+    {
+      "title": "H",
+      "image": "images/pll-edges-03-H.png",
+      "alg": [
+        "M2 U2",
+        "M2 U",
+        "M2 U2",
+        "M2 U'"
+      ]
+    },
+    {
+      "title": "Z",
+      "image": "images/pll-edges-04-Z.png",
+      "alg": [
+        "M2 U M2 U",
+        "M' U2",
+        "M2 U2",
+        "M' U2"
+      ]
+    }
+  ]
+}

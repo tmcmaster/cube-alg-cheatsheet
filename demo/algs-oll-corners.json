@@ -1,0 +1,39 @@
+{
+  "algs": [
+    {
+      "title": "Headlights",
+      "image": "images/oll-corners-01-headlights.png",
+      "alg": ["F","R U R' U'", "F'"]
+    },
+    {
+      "title": "Bruno",
+      "image": "images/oll-corners-02-bruno.png",
+      "alg": ["F", "( R U R' U' ) x2", "F'"]
+    },
+    {
+      "title": "Double Sune",
+      "image": "images/oll-corners-03-double-sune.png",
+      "alg": ["F", "( R U R' U' ) x3", "F'"]
+    },
+    {
+      "title": "Chameleon",
+      "image": "images/oll-corners-04-chameleon.png",
+      "alg": ["R U R' U'", "R' F R F'"]
+    },
+    {
+      "title": "Bow Tie",
+      "image": "images/oll-corners-05-bow-tie.png",
+      "alg": ["R U2 R' U'", "( R U R' U' ) x2", "R U' R'"]
+    },
+    {
+      "title": "Sune",
+      "image": "images/oll-corners-06-sune.png",
+      "alg": ["R U R' U", "R U2 R' U"]
+    },
+    {
+      "title": "Anti-Sune",
+      "image": "images/oll-corners-07-anti-sune.png",
+      "alg": ["R' U' R U'", "R' U2 R' R"]
+    }
+  ]
+}

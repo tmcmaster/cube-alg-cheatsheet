@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>cube-alg demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../cube-alg.html">
+
+    <!-- <link rel="import" href="../../promise-polyfill/promise-polyfill-lite.html"> -->
+    <link rel="import" href="../../iron-ajax/iron-ajax.html">
+    <style>
+      body {
+        padding: 0px;
+      }
+    </style>
+
+    <custom-style>
+      <style is="custom-style" >
+        h1,h3 {
+          //margin-top:0;
+          text-align: center;
+        }
+        h1.heading {
+          box-sizing: border-box;
+          width:200px;
+          height:250px;
+          margin:0px;
+          padding-top:70px;
+          display:inline-block;
+          float:left;
+          margin:5px;
+        }
+        h1.heading > span {
+          clear:both;
+          float:left;
+          width:100%;
+          text-align: center;
+        }
+        body {
+          //padding:20px 10px 10px 0px
+          padding:0px;
+        }
+        div {
+          display: inline-block;
+          display: table;
+          margin: 0 auto;
+          width: 850px;
+        }
+        div.page {
+          page-break-after: always;
+          padding:20px 10px 10px 0px
+        }
+      </style>
+    </custom-style>
+
+  </head>
+  <body>
+    <div class="page">
+      <dom-bind>
+        <template is="dom-bind">
+          <iron-ajax
+              auto
+              url="algs-oll-corners.json"
+              handle-as="json"
+              last-response="{{data}}"
+              on-response="handleResponse"
+              debounce-duration="300"></iron-ajax>
+          <h1 class="heading">
+            <span>3x3</span>
+            <span>OLL/PLL</span>
+            <span>Algorithms</span>
+          </h1>
+          <template is="dom-repeat" items="{{data.algs}}" as="alg">
+            <cube-alg title="{{alg.title}}" alg="{{alg.alg}}" image="{{alg.image}}"></cube-alg>
+          </template>
+        </template>
+      </dom-bind>
+
+      <dom-bind>
+        <template is="dom-bind">
+          <iron-ajax
+              auto
+              url="algs-oll-edges.json"
+              handle-as="json"
+              last-response="{{data}}"
+              on-response="handleResponse"
+              debounce-duration="300"></iron-ajax>
+          <template is="dom-repeat" items="{{data.algs}}" as="alg">
+            <cube-alg title="{{alg.title}}" alg="{{alg.alg}}" image="{{alg.image}}"></cube-alg>
+          </template>
+        </template>
+      </dom-bind>
+      <div>
+        <dom-bind>
+          <template is="dom-bind">
+            <iron-ajax
+                auto
+                url="algs-pll-edges.json"
+                handle-as="json"
+                last-response="{{data}}"
+                on-response="handleResponse"
+                debounce-duration="300"></iron-ajax>
+            <template is="dom-repeat" items="{{data.algs}}" as="alg">
+              <cube-alg title="{{alg.title}}" alg="{{alg.alg}}" image="{{alg.image}}"></cube-alg>
+            </template>
+          </template>
+        </dom-bind>
+      </div>
+    </div>
+    <div class="page">
+      <dom-bind>
+        <template is="dom-bind">
+          <iron-ajax
+              auto
+              url="algs-pll-corners.json"
+              handle-as="json"
+              last-response="{{data}}"
+              on-response="handleResponse"
+              debounce-duration="300"></iron-ajax>
+          <h1 class="heading">
+            <span>3x3</span>
+            <span>OLL/PLL</span>
+            <span>Algorithms</span>
+          </h1>
+          <template is="dom-repeat" items="{{data.algs}}" as="alg">
+            <cube-alg title="{{alg.title}}" alg="{{alg.alg}}" image="{{alg.image}}"></cube-alg>
+          </template>
+        </template>
+      </dom-bind>
+    </div>
+  </body>
+</html>
